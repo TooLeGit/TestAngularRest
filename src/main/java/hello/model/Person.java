@@ -11,17 +11,17 @@ public class Person
 	@Id
 	private long id;
 	private String name;
-	private Date startDate;
+	private String startDate;
 	
 	public Person ()
 	{
 		id = -1L;
 		name = "No Name";
-		startDate = new Date();
+		startDate = new Date().toString();
 	}
 	
 	public Person (final long the_id, final String the_name, 
-								 final Date the_start_date)
+								 final String the_start_date)
 	{
 		id = the_id;
 		name = the_name;
@@ -38,7 +38,7 @@ public class Person
 		return name;
 	}
 	
-	public Date getStartDate ()
+	public String getStartDate ()
 	{
 		return startDate;
 	}

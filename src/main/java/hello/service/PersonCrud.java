@@ -19,9 +19,9 @@ public class PersonCrud
 	
 	private void createCollection ()
 	{
-		my_collection.add(new Person(1L, "John Smith", Calendar.getInstance().getTime()));
-	  my_collection.add(new Person(2L, "Jake Smith", Calendar.getInstance().getTime()));
-	  my_collection.add(new Person(3L, "JOE Smith", Calendar.getInstance().getTime()));
+		my_collection.add(new Person(1L, "John Smith", Calendar.getInstance().getTime().toString()));
+	  my_collection.add(new Person(2L, "Jake Smith", Calendar.getInstance().getTime().toString()));
+	  my_collection.add(new Person(3L, "JOE Smith", Calendar.getInstance().getTime().toString()));
 	}
 	
 	public Person getPerson (final long the_id)
